@@ -1,2 +1,2 @@
-This repo is created fr storing some tutorial docs of Digital Bakcend.
+This repo is created for storing some tutorial docs of Digital Bakcend.
 
