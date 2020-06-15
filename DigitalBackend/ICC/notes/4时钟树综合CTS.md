@@ -22,7 +22,7 @@
 
 \>set_clock_tree_options-routing_rule clk_dsdw \
 
--layer_list {M3M4 M5 M6} \
+-layer_list {M3 M4 M5 M6} \
 
 -use_default_routing_for_sinks1 ;#apply rule to all but leaf nets
 
@@ -32,7 +32,7 @@
 
 #### 4.2 选择用于生成时钟树的references
 
-在进行时钟树综合之前首先需要给软件指定，用哪些单元来创建时钟树。一般可以用时钟Buffer或者时钟反相器来创建。时钟Buffer与一般Buffer的不同之处在于，它的上升下降时间基本相同。使用Buffer构建时钟树的优点是：逻辑简单，便于post-CTS对时钟树的修改；缺点是：面积大，功耗大，insertion delay大。使用反相器构建时钟树的优点是：面积小，功耗小，insertiondelay小，对时钟dutycycle有利；缺点是：不易做时钟树的修改。
+在进行时钟树综合之前首先需要给软件指定，用哪些单元来创建时钟树。一般可以用时钟Buffer或者时钟反相器来创建。时钟Buffer与一般Buffer的不同之处在于，它的上升下降时间基本相同。使用Buffer构建时钟树的优点是：逻辑简单，便于post-CTS对时钟树的修改；缺点是：面积大，功耗大，insertion delay大。使用反相器构建时钟树的优点是：面积小，功耗小，insertiondelay小，对时钟duty cycle(占空比)有利；缺点是：不易做时钟树的修改。
 
 在ICC中进行该操作的GUI步骤依次为：“Clock”⟶“Set Clock Tree References”。在“Clock trees”中选择需要创建时钟树的时钟的名字，下方选择创建时钟树所需的Cell。一般库里面的时钟Buffer或者Inverter都是以CLK或者CK开头的，可以用通配符进行查找这些单元。
 

@@ -63,7 +63,7 @@ ICC有两种布线模式，一种是传统的类似于Astro中的基于格点的
 
 如果存在时序DRC的违反，可以用focal_opt-drc_nets all -effort high来修复。如果想让软件专门修复hold的违反则可以用：
 
-\>focal_opt-hold_endpoints all -effort high
+\>focal_opt -hold_endpoints all -effort high
 
 如果时序DRC还存在违反，那么可能是前面的操作没有执行好，或者就是约束的问题，需要修改约束。
 

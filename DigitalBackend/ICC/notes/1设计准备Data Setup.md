@@ -88,7 +88,7 @@ Order_number指定IOPAD的排列顺序，数字从1开始，越大越往右/上�
 
 ## 1.2 参考库的创建
 
-​		在开始后端布局布线之前首先需要准备好标准单元库、IO库、宏单元库（如SRAM）的各种参考库文件，所有文件均为Milkyway格式。参考库的创建可以用Synopsys公司的Milkyway软件来实现。该工具的图形化界面如图1所示：
+在开始后端布局布线之前首先需要准备好标准单元库、IO库、宏单元库（如SRAM）的各种参考库文件，所有文件均为Milkyway格式。参考库的创建可以用Synopsys公司的Milkyway软件来实现。该工具的图形化界面如图1所示：
 
 ![img](http://mmbiz.qpic.cn/mmbiz_png/jfiabYavVPtlr6ycWicdS31Qct6esrqcQxu1uqVvYxXdgCy18rKMgbgj43pVSXGxg4QJ61GiaS8wuXw1hkXRyaetg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
@@ -98,7 +98,7 @@ Order_number指定IOPAD的排列顺序，数字从1开始，越大越往右/上�
 
 ![img](http://mmbiz.qpic.cn/mmbiz_png/jfiabYavVPtlr6ycWicdS31Qct6esrqcQxtowypIHzsDmBTqoMFGqKAlkic4LLdUU6YSUC0icGrfnMxjZc91R3b0og/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-图2 在Milkyway中创建参考库
+​																	图2 在Milkyway中创建参考库
 
 接着在菜单栏中选择“Cell Library”⟶“LEF In”，“Library Name”后边通过点击“Browse”选择刚才创建的参考库，“Tech LEF Files”选择工艺的LEF文件路径，“Cell LEF Files”选择Cell的LEF文件。其他选项默认即可。点击OK之后就会在参考库目录内生成CEL和FRAM两个文件夹，这两个便是创建的CEL View和FRAM View。
 
